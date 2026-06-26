@@ -160,6 +160,7 @@
   .nav-btn[data-panel="architecture"].active { color: #fb923c; border-bottom-color: #fb923c; }
   .nav-btn[data-panel="aivalue"].active   { color: #a78bfa; border-bottom-color: #a78bfa; }
   .nav-btn[data-panel="metrics"].active   { color: #34d399; border-bottom-color: #34d399; }
+  .nav-btn[data-panel="casestudies"].active { color: #fbbf24; border-bottom-color: #fbbf24; }
 
   /* ── PANELS ── */
   .panel { display: none; }
@@ -536,6 +537,7 @@
   <button class="nav-btn" data-panel="architecture">06 · Architecture</button>
   <button class="nav-btn" data-panel="aivalue">07 · AI Value</button>
   <button class="nav-btn" data-panel="metrics">08 · Metrics</button>
+  <button class="nav-btn" data-panel="casestudies">09 · Case Studies</button>
 </div>
 
 <!-- ══════════════════════════════════════════════════════════════
@@ -2211,3 +2213,256 @@
 </script>
 </body>
 </html>
+
+<!-- ══════════════════════════════════════════════════════════════
+     PANEL 9 · CASE STUDIES WIKI
+═══════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panel-casestudies">
+<div class="container">
+
+  <div class="section">
+    <div class="s-label" style="color:#fbbf24">Blueprint 09</div>
+    <div class="s-title">Case Studies Wiki</div>
+    <p class="s-intro">
+      The world's most studied delivery transformations — examined not as inspiration but as <strong>diagnostic evidence</strong>. For each case, the SPC question is: what structural conditions made this work, what failed, and what is the transferable principle? Copying the label is the most common mistake. Understanding the mechanism is the authority move.
+    </p>
+  </div>
+
+  <!-- CASE STUDY 1: SPOTIFY -->
+  <div class="section">
+    <div class="s-label" style="color:#fbbf24">Case Study 01</div>
+    <div class="s-title" style="display:flex;align-items:center;gap:12px">
+      <span style="font-size:28px">🎵</span> Spotify — The Model That Reshaped an Industry
+    </div>
+
+    <div class="signal-strip">
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">2012</div><div class="signal-label">Original whitepaper published — 250 engineers, 3 cities</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">6–12</div><div class="signal-label">Squad size — cross-functional, autonomous, mission-led</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">&lt;150</div><div class="signal-label">Tribe size ceiling — Dunbar's Number applied deliberately</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">100+</div><div class="signal-label">Distinct systems in the Spotify product at scale</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">≠</div><div class="signal-label">Spotify no longer uses the model as originally described</div></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card" style="border-left:3px solid #fbbf24">
+        <h3>What Actually Worked</h3>
+        <ul>
+          <li><strong>Squad autonomy with mission clarity</strong> — each squad had a written purpose and a way to measure customer impact. Not just autonomy; autonomy with direction.</li>
+          <li><strong>Chapters solved the matrix problem</strong> — functional expertise (backend, QA, UX) maintained across squads without creating functional silos</li>
+          <li><strong>Guilds spread practice organically</strong> — voluntary communities of interest cross-pollinated standards without mandates</li>
+          <li><strong>Tribe size discipline</strong> — keeping tribes under 150 people maintained informal coordination. Growth beyond this required structural response</li>
+          <li><strong>Health checks as a continuous signal</strong> — Spotify Health Check provided team-level data the SADL/Tribe Lead could act on</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:3px solid #ff5555">
+        <h3>What Failed — The Honest Version</h3>
+        <ul>
+          <li><strong>Tribes became empires</strong> — as Spotify grew, tribes expanded beyond 150 and became silos. Cross-tribe coordination proved as hard as the functional silos the model replaced</li>
+          <li><strong>Guilds lost effectiveness at scale</strong> — voluntary participation meant the people who most needed to show up (senior engineers) were often too busy to attend</li>
+          <li><strong>Chapter leads stretched thin</strong> — serving as peer in own squad and manager of people in other squads created role tension that didn't scale</li>
+          <li><strong>Autonomy without technical discipline = fragmentation</strong> — teams made independent technology choices that produced incompatible systems expensive to maintain</li>
+          <li><strong>Most implementations copied the labels, not the conditions</strong> — 2012 Spotify was 250 people in a homogeneous engineering culture. That context didn't transfer.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout" style="background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);">
+      <div class="callout-header" style="color:#fbbf24">🏆 SPC Transferable Principles</div>
+      <p style="color:rgba(251,200,140,0.85);">What to take from Spotify: <strong>cross-functional squad ownership + mission clarity + communities of practice + tribe size discipline.</strong> What to leave: the labels. The modern synthesis is Spotify principles + Team Topologies structure + platform engineering + OKRs. The 2026 practice is "adapted Spotify" — not the 2012 snapshot. Kniberg himself said it was never meant to be copied: <em>"This is not a recipe. It is a snapshot of what we are doing right now."</em> The SPC who understands this distinction avoids the most common agile transformation failure mode.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CASE STUDY 2: ING BANK -->
+  <div class="section">
+    <div class="s-label" style="color:#fbbf24">Case Study 02</div>
+    <div class="s-title" style="display:flex;align-items:center;gap:12px">
+      <span style="font-size:28px">🏦</span> ING Bank Netherlands — Teaching an Elephant to Race
+    </div>
+
+    <div class="signal-strip">
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">3,500</div><div class="signal-label">Employees restructured into squads and tribes — 2015</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">350</div><div class="signal-label">Nine-person squads across 13 tribes at full implementation</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">2→3wk</div><div class="signal-label">Release frequency: from 5–6 big launches/year to bi-weekly</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">600</div><div class="signal-label">Monthly CDaaS apps in production post-agile (up from 280)</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">#1</div><div class="signal-label">NPS ranking in Netherlands — beat Rabobank and ABN AMRO</div></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card" style="border-left:3px solid #fbbf24">
+        <h3>What Made ING Work</h3>
+        <ul>
+          <li><strong>Behavioural design, not just structural change</strong> — ING addressed psychological forces: anxiety about career growth (chapter leads), loss of status (outcomes over team size), connection to purpose (customer impact in call centres first week)</li>
+          <li><strong>End-to-end principle rigorously applied</strong> — squads included marketing, product, commercial, UX, data analysts, AND IT engineers. Not just dev teams renamed</li>
+          <li><strong>QBR as alignment mechanism</strong> — each tribe published quarterly achievements, learnings and next-quarter goals openly. Borrowed from Google/Netflix. Transparent across all tribes.</li>
+          <li><strong>Microservices architecture enabled squad independence</strong> — each squad owned a specific microservice, reducing deployment dependencies structurally</li>
+          <li><strong>SAFe elements for large-scale coordination</strong> — PI planning sessions aligned product owners and tribe leads on priorities across squads without sacrificing team agility</li>
+          <li><strong>Pilot before scale</strong> — started with 5–6 squads, built applied experience, then rolled out. Not a big-bang transformation.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:3px solid #ff5555">
+        <h3>What ING Struggled With</h3>
+        <ul>
+          <li><strong>Squad member fatigue</strong> — two-week sprints at consistently high pace. Tribe leads flagged burnout risk as a structural challenge, not an individual failing</li>
+          <li><strong>Chapter lead role under-specified</strong> — role tension between peer and manager. When chapters didn't function well, squad skill development suffered and created inter-squad dependencies</li>
+          <li><strong>Support functions excluded</strong> — HR, finance, risk, and call centres initially excluded. Created friction at the boundary between agile and non-agile functions</li>
+          <li><strong>Scaling across borders</strong> — the Netherlands model (10 years of agile culture) was mismatched with group entities just beginning their agile journey. Cultural transfer harder than structural transfer</li>
+          <li><strong>Risk of new stasis</strong> — academics noted the risk of replacing one set of processes with "agile processes" — ceremony without genuine adaptability</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout" style="background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);">
+      <div class="callout-header" style="color:#fbbf24">🏆 SPC Transferable Principles</div>
+      <p style="color:rgba(251,200,140,0.85);">ING is the definitive proof that large-scale agile works in regulated, non-tech industries — when done with structural discipline and <strong>behavioural intentionality</strong>. The mechanism: cross-functional squad ownership + microservices architecture + QBR transparency + psychological safety investment. The SAFe lens: ING ran PI planning-equivalent QBRs before "PI planning" was the vocabulary. The SPC insight for financial services clients: compliance doesn't block agility — it requires embedding compliance champions in squads and automated compliance gates in CI/CD. ING proved this.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- CASE STUDY 3: NETFLIX -->
+  <div class="section">
+    <div class="s-label" style="color:#fbbf24">Case Study 03</div>
+    <div class="s-title" style="display:flex;align-items:center;gap:12px">
+      <span style="font-size:28px">🎬</span> Netflix — The Paved Road and Freedom & Responsibility
+    </div>
+
+    <div class="signal-strip">
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">Daily</div><div class="signal-label">Deployment frequency — hundreds of changes per day across teams</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">150</div><div class="signal-label">Centralised platform team — developer productivity + delivery</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">1→2min</div><div class="signal-label">Titus container deployments — down from tens of minutes</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">2008</div><div class="signal-label">Migration from monolith to cloud microservices began — after DB crash</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#fbbf24">≠copy</div><div class="signal-label">Autonomy was the end state — not the starting condition</div></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="card" style="border-left:3px solid #fbbf24">
+        <h3>The Netflix Delivery Model — What Actually Makes It Work</h3>
+        <ul>
+          <li><strong>Paved Road philosophy</strong> — centralised teams build supported tools (Spinnaker CI/CD, Chaos Monkey, Backstage-equivalent). Engineers can deviate but take on full ownership of maintenance. Most don't deviate.</li>
+          <li><strong>Full-cycle developers (Operate What You Build)</strong> — engineers own build, deploy, operate, AND support. No handoff to ops. Eliminates the knowledge-transfer loss that plagued their 2012 model.</li>
+          <li><strong>Failure tolerance infrastructure FIRST</strong> — Chaos Monkey (random production termination) forced resilience. Autonomy to deploy was only safe because the system was designed to tolerate individual component failures</li>
+          <li><strong>Declarative delivery</strong> — Managed Delivery lets teams describe requirements (what, not how). Spinnaker determines the steps. Teams stay on the paved path without managing pipeline complexity.</li>
+          <li><strong>Developer experience as product</strong> — Platform team's explicit mission: "tools so compelling engineers adopt them voluntarily." Internal NPS tracked. Adoption campaigns run. Not mandated.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:3px solid #ff5555">
+        <h3>What Netflix Teaches You NOT To Copy</h3>
+        <ul>
+          <li><strong>Don't copy the end state</strong> — Netflix's deployment autonomy took years of platform investment to make safe. Organisations that adopt "you build it, you run it" without the failure infrastructure produce chaos, not velocity</li>
+          <li><strong>Tool adoption requires internal marketing</strong> — even at Netflix, getting engineers to migrate to new tools is hard. "Our customers have day jobs" — the platform team explicitly runs campaigns and makes migrations seamless</li>
+          <li><strong>Freedom without responsibility is liability</strong> — the culture of freedom works because it is matched by accountability. Engineers own production incidents for their own services. No externalising blame.</li>
+          <li><strong>Platform investment is sustained, not a project</strong> — Netflix has been iterating on their developer platform since 2012. It is never "done." Treating it as a project produces a platform that teams abandon.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="callout" style="background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);">
+      <div class="callout-header" style="color:#fbbf24">🏆 SPC Transferable Principles</div>
+      <p style="color:rgba(251,200,140,0.85);">Netflix is the canonical Platform Engineering case study. The mechanism: <strong>paved roads (golden paths) + full-cycle ownership + failure tolerance architecture + developer experience as product.</strong> The SPC diagnostic question: "Can your teams deploy independently without coordinating with other teams?" If not, the constraint is architecture or platform maturity — not team autonomy. Netflix's lesson for every organisation: <strong>invest in failure tolerance before granting deployment freedom.</strong> The sequence matters. Most organisations get it backwards.</p>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- COMPARISON TABLE -->
+  <div class="section">
+    <div class="s-label" style="color:#fbbf24">Synthesis</div>
+    <div class="s-title">Three models compared — the SPC diagnostic matrix</div>
+    <table class="bp-table">
+      <thead>
+        <tr><th>Dimension</th><th>🎵 Spotify</th><th>🏦 ING Bank</th><th>🎬 Netflix</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="td-primary">Primary model</span></td>
+          <td>Squad/Tribe/Chapter/Guild autonomy model</td>
+          <td>Spotify-inspired + SAFe PI planning + microservices</td>
+          <td>Platform engineering + full-cycle ownership + paved roads</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Key success mechanism</span></td>
+          <td>Mission clarity + community of practice</td>
+          <td>Behavioural design + end-to-end squad ownership</td>
+          <td>Failure tolerance infrastructure + developer experience as product</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Architecture foundation</span></td>
+          <td>Product-aligned services (implicit)</td>
+          <td>Microservices — one squad, one service ownership</td>
+          <td>Cloud-native microservices + chaos engineering from 2008</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Governance model</span></td>
+          <td>Tribe autonomy + Trio (tribe lead / product / design)</td>
+          <td>QBR transparency + PI planning + Orange Code values</td>
+          <td>Freedom and responsibility — engineers own what they build</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">What failed / stretched</span></td>
+          <td>Cross-tribe coordination, guild effectiveness, chapter lead dual role</td>
+          <td>Fatigue, chapter lead underspecification, cross-border cultural transfer</td>
+          <td>Tool adoption without mandate, maintaining paved road relevance at scale</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Applicability to SAFe orgs</span></td>
+          <td>Squad = Agile Team; Tribe = ART; Guild = Community of Practice</td>
+          <td>Direct analogue — QBR = PI; SAFe explicitly used at ING for large coordination</td>
+          <td>Platform team = SAFe Platform ART; Paved road = golden path for ART</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">SPC warning</span></td>
+          <td>Don't implement 2012 Spotify in 2026 — copy principles, not structure</td>
+          <td>Don't skip the behavioural change work — structural change without culture change produces vocabulary not transformation</td>
+          <td>Don't give teams deployment autonomy before building failure tolerance — sequence matters</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- WHAT TO ADD NEXT -->
+  <div class="section">
+    <div class="s-label" style="color:#fbbf24">Coming Next</div>
+    <div class="s-title">Case studies in the pipeline</div>
+    <div class="grid-3">
+      <div class="card" style="border-top:2px solid #fbbf24;opacity:0.7">
+        <div class="card-icon">🚗</div>
+        <h3>Amazon — Two-Pizza Teams</h3>
+        <p>The original autonomous team model. Service ownership, internal APIs as products, the "working backwards" press release method. Delivery through org design — not process.</p>
+      </div>
+      <div class="card" style="border-top:2px solid #fbbf24;opacity:0.7">
+        <div class="card-icon">🏪</div>
+        <h3>Shopify — Modular Monolith at Scale</h3>
+        <p>The deliberate counter-narrative to microservices. Shopify's "dev" tool: identical reproducible environments for every engineer. Platform team as product. Internal NPS measurement.</p>
+      </div>
+      <div class="card" style="border-top:2px solid #fbbf24;opacity:0.7">
+        <div class="card-icon">🎵</div>
+        <h3>Spotify (2026) — Backstage as IDP</h3>
+        <p>How Spotify's original internal developer portal became the world's most adopted open-source IDP. From internal tool to platform engineering industry standard.</p>
+      </div>
+      <div class="card" style="border-top:2px solid #fbbf24;opacity:0.7">
+        <div class="card-icon">✈️</div>
+        <h3>Austrian Post — PRIME Model</h3>
+        <p>The rolling refinement model that replaces quarterly PI planning crunches. The source model behind the async BRP cadence in Blueprint 01.</p>
+      </div>
+      <div class="card" style="border-top:2px solid #fbbf24;opacity:0.7">
+        <div class="card-icon">🏥</div>
+        <h3>Healthcare / Regulated Industry</h3>
+        <p>Agile delivery under regulatory constraint. Embedded compliance champions, automated compliance gates in CI/CD, risk-based autonomy tiers. The ING financial services model extended.</p>
+      </div>
+      <div class="card" style="border-top:2px solid #fbbf24;opacity:0.7">
+        <div class="card-icon">🛒</div>
+        <h3>WooliesX Loyalty (Emerging)</h3>
+        <p>The tribe/squad model at Australian retail scale. Async BRP, offshore capability hubs, Eagle Eye / Quantium partner integration. The case study this wiki was seeded from.</p>
+      </div>
+    </div>
+
+    <div class="callout" style="background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);">
+      <div class="callout-header" style="color:#fbbf24">📚 Wiki Philosophy</div>
+      <p style="color:rgba(251,200,140,0.85);">This wiki is a living document. Case studies are most valuable not as inspiration but as <strong>diagnostic evidence</strong> — the conditions that made delivery transformations work, the failure modes that emerge at scale, and the transferable principles that survive context change. Every case study here is examined through that lens: mechanism over mythology. The SPC authority move is being able to say not just "Spotify did X" but "the structural condition that made X work at Spotify was Y — and here is whether Y exists in your organisation."</p>
+    </div>
+  </div>
+
+</div>
+</div>
