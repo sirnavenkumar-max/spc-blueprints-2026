@@ -161,6 +161,7 @@
   .nav-btn[data-panel="aivalue"].active   { color: #a78bfa; border-bottom-color: #a78bfa; }
   .nav-btn[data-panel="metrics"].active   { color: #34d399; border-bottom-color: #34d399; }
   .nav-btn[data-panel="casestudies"].active { color: #fbbf24; border-bottom-color: #fbbf24; }
+  .nav-btn[data-panel="decentralised"].active { color: #22d3ee; border-bottom-color: #22d3ee; }
 
   /* ── PANELS ── */
   .panel { display: none; }
@@ -538,6 +539,7 @@
   <button class="nav-btn" data-panel="aivalue">07 · AI Value</button>
   <button class="nav-btn" data-panel="metrics">08 · Metrics</button>
   <button class="nav-btn" data-panel="casestudies">09 · Case Studies</button>
+  <button class="nav-btn" data-panel="decentralised">10 · Decentralised</button>
 </div>
 
 <!-- ══════════════════════════════════════════════════════════════
@@ -811,6 +813,32 @@
     </div>
   </div>
 
+    <hr class="divider">
+    <div class="section">
+      <div class="s-label" style="color:#22d3ee">Decentralised Edge · Delivery</div>
+      <div class="s-title">What changes when your ART spans multiple time zones</div>
+      <div class="grid-2">
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Async-First as Non-Negotiable</h3>
+          <ul>
+            <li>For distributed ARTs, higher async communication directly predicts higher software quality (Mo et al. 2026). Written artifacts replace coordination noise.</li>
+            <li>INVEST-ready features before BRP is even more critical — a feature that needs a meeting to understand is not ready for a distributed team</li>
+            <li>Structured async standups: progress + next step + blocker with owner. No status meeting equivalent needed.</li>
+            <li>Overlap window is scarce — reserve it for decisions only, never status</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Follow-the-Sun Delivery Model</h3>
+          <ul>
+            <li>True FTS: single owner + daily handoff. Failure mode: every shift reconstructs context before acting — eliminate through structured handoff packets</li>
+            <li>Best fit for: incident response, QA, platform operations, CI/CD monitoring — not complex feature development requiring tight collaboration</li>
+            <li>2-site model first: fewer handoffs, simpler governance. Add sites only when 2-site is proven</li>
+            <li>Definition of Done must be verifiable asynchronously — "done for this step" must be visible without a call</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 </div>
 </div>
 
@@ -991,6 +1019,32 @@
       <p>The SPC's authority signal: distinguish between <strong>governance that enables speed</strong> and <strong>governance that creates the illusion of control</strong>. Most organisations have too much of the latter.</p>
     </div>
   </div>
+
+    <hr class="divider">
+    <div class="section">
+      <div class="s-label" style="color:#22d3ee">Decentralised Edge · Governance</div>
+      <div class="s-title">Governing distributed teams without time-zone ceremony sprawl</div>
+      <div class="grid-2">
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Decision Rights Must Be Explicit</h3>
+          <ul>
+            <li>Every async decision delay costs a full business day in a distributed team. Multiply by unresolved decisions per sprint — the delivery impact is measurable.</li>
+            <li>Define: what can be decided async, what needs live overlap, and who has final call. Document it. Make it visible.</li>
+            <li>Decentralise decisions to the lowest capable layer — don't pull offshore teams into AEST-only governance windows</li>
+            <li>Architecture Decision Records (ADRs) are governance instruments — distributed teams need decisions documented, not recalled verbally</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Shadow AI — The Distributed Governance Risk</h3>
+          <ul>
+            <li>IBM 2025: 1 in 5 orgs experienced incidents linked to shadow AI — unsanctioned tools adopted without IT oversight. Adds avg $670K to breach costs.</li>
+            <li>Distributed teams: shadow AI adoption is harder to detect and spreads faster across geographies and devices</li>
+            <li>SPC prescription: explicit approved AI tool list in onboarding. Not a ban — a governed list with fast addition process</li>
+            <li>Include shadow AI audit in PI retrospective inputs — normalise surfacing it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 </div>
 </div>
@@ -1184,6 +1238,32 @@
       <p>At enterprise scale — 100+ squads, offshore capability hubs, commercial partners and third-party integrations — the dependency surface area is enormous. The SPC authority move is reframing the problem: <strong>most "dependency problems" are actually architecture problems</strong>. If teams are constantly blocked by each other, the coupling is too tight. The long-term fix is domain decomposition — not better dependency tracking. Both matter, but only one scales.</p>
     </div>
   </div>
+
+    <hr class="divider">
+    <div class="section">
+      <div class="s-label" style="color:#22d3ee">Decentralised Edge · Dependency</div>
+      <div class="s-title">Dependencies across time zones amplify faster than co-located ones</div>
+      <div class="grid-2">
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>The 24-Hour Dependency Tax</h3>
+          <ul>
+            <li>An unresolved dependency in a co-located team costs hours. In a distributed team, the same dependency costs days — one full timezone cycle per round-trip</li>
+            <li>Pre-PI dependency resolution becomes urgent, not optional. All cross-team dependencies must be resolved before Week 1 — no exceptions for distributed ARTs</li>
+            <li>Dependency map refresh must be continuous, not event-driven. Stale maps in distributed teams cause silent misalignment</li>
+            <li>"If it needs a meeting to resolve, it needed to be flagged two weeks earlier" — the distributed dependency principle</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Handoff Packet Standard</h3>
+          <ul>
+            <li>Every cross-timezone handoff needs a structured packet: current state, next action, blockers, owner, expected response time</li>
+            <li>Ownership must be singular at all times — "team owns it" in a distributed context means nobody owns it</li>
+            <li>Module/service-level ownership assignment: each distributed pod owns a distinct service boundary, minimising handoff need entirely</li>
+            <li>Code review SLA across timezones: define expected response window. Unreviewed PRs stall FTS pipelines silently</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 </div>
 </div>
@@ -1600,6 +1680,32 @@
     </div>
   </div>
 
+    <hr class="divider">
+    <div class="section">
+      <div class="s-label" style="color:#22d3ee">Decentralised Edge · People</div>
+      <div class="s-title">Building culture and capability across geographies</div>
+      <div class="grid-2">
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Culture Is the Hardest Transfer</h3>
+          <ul>
+            <li>State of Devs 2025: over 30% of respondents cited culture as their primary workplace difficulty. For distributed teams, cultural misalignment is the leading cause of attrition and delivery failure.</li>
+            <li>Treat offshore teams as insiders, not vendors. Shared onboarding, company values, team rituals — the more they feel like insiders, the better they perform</li>
+            <li>Rotating meeting times: share the pain of inconvenient hours. One region permanently on early morning / late night calls signals their work is less valued</li>
+            <li>Recorded demo days: async-first with live Q&A option. Engineers share what they built — across all sites, not just onshore</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>AI Champions in Distributed Pods</h3>
+          <ul>
+            <li>Each distributed pod needs an AI Champion — a peer advocate, not a manager — who drives local AI tool adoption and surfaces adoption barriers to the centre</li>
+            <li>AI literacy programs must be delivered in-flow and timezone-appropriate. A mandatory 9am AEST training session is not accessible to an India team</li>
+            <li>Skills taxonomy over role taxonomy: distributed pods hired for specific capability clusters, not job titles — enables precise capacity matching across geographies</li>
+            <li>45% of remote workers report isolation. Team wellbeing tracking (SPACE framework) must include distributed-specific signals, not just co-located proxies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 </div>
 </div>
 
@@ -1807,6 +1913,32 @@
     </div>
   </div>
 
+    <hr class="divider">
+    <div class="section">
+      <div class="s-label" style="color:#22d3ee">Decentralised Edge · Architecture</div>
+      <div class="s-title">Architecture is the long-term fix for distributed dependency problems</div>
+      <div class="grid-2">
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Conway's Law in Distributed Teams</h3>
+          <ul>
+            <li>Systems mirror the communication structures of the organisations that build them. In distributed teams, poor architecture produces cross-timezone dependencies that no coordination model can fix</li>
+            <li>Domain boundaries must align with team geography: each distributed pod owns a distinct bounded context — not a slice of every feature</li>
+            <li>Event-Driven Architecture is particularly powerful for distributed teams: async event streams remove the need for synchronous cross-team calls</li>
+            <li>API-first contracts enable parallel development across timezones — teams can build against a stable contract without waiting for the other side to finish</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Platform Engineering Removes Coordination Need</h3>
+          <ul>
+            <li>A mature IDP is the single highest-leverage investment for distributed teams: self-service provisioning means offshore engineers don't wait on timezone-gated approvals</li>
+            <li>Golden paths must work in every timezone — environment setup, CI/CD, deployment all self-service. A tool that requires a Slack message to an AEST engineer is not a golden path</li>
+            <li>Reproducible dev environments (like Shopify's "dev" tool): identical local environment regardless of geography eliminates "works on my machine" cross-timezone debugging</li>
+            <li>Observability tooling must be self-service: distributed engineers should be able to diagnose production issues without waking up a different timezone</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
 </div>
 </div>
 
@@ -1977,6 +2109,32 @@
       <p style="color:rgba(200,185,255,0.85);">The SPC who can walk a client through the AI Maturity diagnostic — combining DORA 2025's seven capabilities with the AI Amplifier Effect and SAFe's new AI Value Architect role — is operating at the frontier of the profession. Most clients are at Stage 1 (pilot). Most consultants can only describe Stage 4. <strong>The value is in mapping the path from 1 to 2.</strong> That's the engagement. That's the authority. Start with measurement: what are your DORA metrics today? Most clients don't know. That's the opening.</p>
     </div>
   </div>
+
+    <hr class="divider">
+    <div class="section">
+      <div class="s-label" style="color:#22d3ee">Decentralised Edge · AI Value</div>
+      <div class="s-title">AI amplifies distributed delivery — in both directions</div>
+      <div class="grid-2">
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>AI as the Timezone Bridge</h3>
+          <ul>
+            <li>AI coding assistants reduce the cost of context-switching across handoffs — engineers pick up where the previous timezone left off with AI-generated context summaries</li>
+            <li>AI-generated documentation and decision records fill the async communication gap: what used to require a standup now travels in a structured artifact</li>
+            <li>AI dependency risk scanning across the ART backlog can run continuously — not just at BRP — giving distributed SADLs real-time visibility without a ceremony</li>
+            <li>AI OKR forecasting: with distributed teams running 24-hr cycles, mid-PI surprises arrive faster. AI early warning gives the SADL response time before it becomes a crisis</li>
+          </ul>
+        </div>
+        <div class="card" style="border-left:3px solid #22d3ee">
+          <h3>Distributed AI Risk — The Amplifier Warning</h3>
+          <ul>
+            <li>DORA 2025 AI Amplifier Effect: AI magnifies existing conditions. Distributed teams with weak async discipline + AI = faster miscommunication at scale</li>
+            <li>AI-generated code reviewed across timezones: review lag means stalled PRs and increasing WIP — directly worsening the AI Productivity Paradox</li>
+            <li>Shadow AI spreads faster in distributed environments — governance must precede adoption, not follow the breach</li>
+            <li>Human-AI handoff points must be explicit in distributed workflows — ambiguous handoffs in co-located teams are bad; across timezones they are invisible until they fail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
 </div>
 </div>
@@ -2461,6 +2619,232 @@
     <div class="callout" style="background:rgba(251,191,36,0.08);border:1px solid rgba(251,191,36,0.2);">
       <div class="callout-header" style="color:#fbbf24">📚 Wiki Philosophy</div>
       <p style="color:rgba(251,200,140,0.85);">This wiki is a living document. Case studies are most valuable not as inspiration but as <strong>diagnostic evidence</strong> — the conditions that made delivery transformations work, the failure modes that emerge at scale, and the transferable principles that survive context change. Every case study here is examined through that lens: mechanism over mythology. The SPC authority move is being able to say not just "Spotify did X" but "the structural condition that made X work at Spotify was Y — and here is whether Y exists in your organisation."</p>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════
+     PANEL 10 · DECENTRALISED TEAMS BLUEPRINT
+═══════════════════════════════════════════════════════════════ -->
+<div class="panel" id="panel-decentralised">
+<div class="container">
+
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">Blueprint 10</div>
+    <div class="s-title">Decentralised Teams Blueprint</div>
+    <p class="s-intro">
+      87% of tech companies plan to maintain or expand distributed teams. 32% of developers globally now work remotely. Distribution is not a constraint to manage — it is a delivery model to architect deliberately. The SPC who understands the structural, cultural, and technical conditions for high-performing distributed teams operates at the frontier of the profession in 2026.
+    </p>
+  </div>
+
+  <!-- SIGNALS -->
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">Current State · 2026</div>
+    <div class="signal-strip">
+      <div class="signal-cell"><div class="signal-value" style="color:#22d3ee">87%</div><div class="signal-label">Tech companies maintaining or expanding distributed teams</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#22d3ee">32%</div><div class="signal-label">Developers globally working remotely (Stack Overflow 2025)</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#22d3ee">$634B</div><div class="signal-label">Global IT outsourcing market in 2026 — growing 6.2% p.a.</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#22d3ee">$670K</div><div class="signal-label">Avg extra breach cost linked to shadow AI in distributed orgs (IBM 2025)</div></div>
+      <div class="signal-cell"><div class="signal-value" style="color:#22d3ee">1 day</div><div class="signal-label">Cost of every unresolved async decision in a distributed team</div></div>
+    </div>
+  </div>
+
+  <!-- THREE MODELS -->
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">Structure</div>
+    <div class="s-title">Three distributed team models — choose deliberately</div>
+    <div class="grid-3">
+      <div class="card" style="border-top:2px solid #22d3ee">
+        <div class="card-icon">🌐</div>
+        <h3>Fully Distributed (Remote-First)</h3>
+        <p>No central office. Every team member remote. Async is the default, not the exception. Tools, norms, and culture all built for distribution from inception.</p>
+        <ul>
+          <li>Works best when: async discipline is mature, domain boundaries are clean, platform is self-service</li>
+          <li>Fails when: decisions require constant live negotiation, architecture is tightly coupled, culture treats remote as second-class</li>
+          <li>SAFe lens: ART ceremonies redesigned as async-first with compressed live touchpoints</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:2px solid #22d3ee">
+        <div class="card-icon">🏢</div>
+        <h3>Hub-and-Spoke (Offshore Capability Hubs)</h3>
+        <p>Central onshore team with one or more offshore capability hubs. Hubs own distinct service boundaries or capability domains — not slices of every feature.</p>
+        <ul>
+          <li>Works best when: domain decomposition aligns with hub geography, overlap window is used for decisions only, hubs treated as insiders not vendors</li>
+          <li>Fails when: hubs are task executors rather than domain owners, coordination overhead isn't budgeted</li>
+          <li>SAFe lens: each hub = a set of Agile Teams within the ART with clear PI commitments</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:2px solid #22d3ee">
+        <div class="card-icon">☀️</div>
+        <h3>Follow-the-Sun (FTS)</h3>
+        <p>Single work item owned by one site at any moment. At end of day, ownership transferred to the next timezone west. Designed for continuous 24-hour delivery cycles.</p>
+        <ul>
+          <li>Works best for: incident response, QA automation, platform ops, CI/CD monitoring</li>
+          <li>Fails for: complex feature development requiring tight collaboration — handoff cost exceeds gain</li>
+          <li>Start with 2-site before 3-site. Every additional site multiplies handoff complexity.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ASYNC OPERATING SYSTEM -->
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">Operating Model</div>
+    <div class="s-title">Async-first as an operating system — not a communication preference</div>
+    <p class="s-intro">The most common failure in distributed delivery is treating async as a fallback for when you can't meet. The highest-performing distributed teams treat async as the primary operating mode and synchronous time as the scarce resource it is.</p>
+
+    <table class="bp-table">
+      <thead>
+        <tr><th>Communication type</th><th>Default mode</th><th>When to go synchronous</th><th>Artifact standard</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="td-primary">Daily progress</span>What I did / next / blocked</td>
+          <td>Async standup — written, structured format</td>
+          <td>Never. If it needs a call, it's a blocker escalation</td>
+          <td>Progress + next step + blocker + owner. Max 5 lines.</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Feature specification</span>What we're building and why</td>
+          <td>Written Feature Readiness Card (INVEST)</td>
+          <td>Kick-off only — once, to confirm shared understanding</td>
+          <td>"If a story cannot be understood without a meeting, it is not ready."</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Technical decision</span>Architecture, approach, trade-off</td>
+          <td>Architecture Decision Record (ADR)</td>
+          <td>When decision requires emotional alignment or conflict resolution</td>
+          <td>Context + options + decision + consequences. Permanent record.</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Code review</span>PR feedback and approval</td>
+          <td>Async — written comments with clear accept/change/reject</td>
+          <td>When review reveals a design flaw requiring dialogue</td>
+          <td>SLA: response within X hours defined by site. Tracked as PR Review Latency.</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Cross-timezone handoff</span>Work item transfer between sites</td>
+          <td>Structured handoff packet</td>
+          <td>Never. If it needs a call to hand off, the packet was incomplete</td>
+          <td>State + next action + blockers + owner + expected response time.</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Dependency negotiation</span>Cross-ART, cross-team</td>
+          <td>Async: dependency map + written proposal</td>
+          <td>Pre-PI session — 60 min, all SADLs, decisions only</td>
+          <td>From/to team + feature + resolution + risk level + owner.</td>
+        </tr>
+        <tr>
+          <td><span class="td-primary">Incident response</span>Production issue triage</td>
+          <td>Synchronous — this is the FTS model's primary use case</td>
+          <td>Always for Sev 1/2. FTS rotation covers coverage without on-call fatigue</td>
+          <td>Incident timeline + actions + owner documented in real-time for async handoff.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- GOVERNANCE FOR DISTRIBUTED -->
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">Governance</div>
+    <div class="s-title">What breaks in distributed governance — and the fixes</div>
+    <div class="matrix">
+      <div class="matrix-cell">
+        <h4 style="color:#ff5555">Common Failure Modes</h4>
+        <ul>
+          <li>Decisions that require a synchronous call with AEST engineers — every such decision costs 24hrs minimum</li>
+          <li>Governance ceremonies scheduled in one timezone's working hours — offshore team attends at 11pm or skips</li>
+          <li>Status meetings instead of async risk digests — offshore engineers in meetings, not building</li>
+          <li>Vendor relationship, not team relationship — offshore treated as external, excluded from PI context</li>
+          <li>Shadow AI undetected until a breach — distributed adoption is faster and harder to audit</li>
+          <li>Cross-site attrition invisible — NPS averaged across sites masks a failing hub</li>
+        </ul>
+      </div>
+      <div class="matrix-cell">
+        <h4 style="color:#22d3ee">The Fixes</h4>
+        <ul>
+          <li>Decision rights matrix: what can be decided async, what needs live overlap, who has final call — documented, not assumed</li>
+          <li>Rotate ceremony times: share inconvenient windows equitably across sites. Permanent AEST-only governance signals hierarchy</li>
+          <li>Replace status meetings with async risk digest — written, Monday AM, actionable, 5 risks max</li>
+          <li>Onboard offshore as insiders: shared company values, team rituals, PI context, product vision</li>
+          <li>Explicit AI tool governance: approved list in onboarding, fast addition process, shadow AI on retro survey</li>
+          <li>Site-segmented SPACE metrics: satisfaction and NPS by hub, not aggregated</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- PLATFORM AS EQUALISER -->
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">Platform Engineering for Distributed Teams</div>
+    <div class="s-title">The IDP is the single highest-leverage investment for distribution</div>
+    <div class="grid-2">
+      <div class="card" style="border-top:2px solid #22d3ee">
+        <h3>What the IDP Must Provide for Distributed Teams</h3>
+        <ul>
+          <li>Self-service environment provisioning — no timezone-gated approvals. An offshore engineer should provision in minutes, not wait for an AEST approval ticket</li>
+          <li>Reproducible dev environments: identical local setup regardless of geography. Eliminates cross-timezone "works on my machine" debugging</li>
+          <li>Self-service observability: distributed engineers diagnose production issues without waking another timezone</li>
+          <li>Async-accessible documentation: service catalog, ADRs, runbooks — all findable without a Slack message to the AEST team</li>
+          <li>AI coding assistant integrated in golden path — same tooling, same guardrails, every site</li>
+        </ul>
+      </div>
+      <div class="card" style="border-top:2px solid #22d3ee">
+        <h3>The Netflix Distributed Lesson</h3>
+        <ul>
+          <li>"We don't mandate adoption of paved roads, but we ensure development using them is a far better experience than not" — engineers adopt voluntarily because the path is genuinely superior</li>
+          <li>Paved roads remove the need for timezone coordination on infrastructure decisions. Each team self-serves within guardrails</li>
+          <li>Full-cycle ownership: engineers in any geography own build, deploy, operate, AND support for their service. No handoff to an AEST ops team</li>
+          <li>Internal marketing of platform improvements: "Our customers have day jobs" — the platform team runs adoption campaigns, makes migrations seamless. Applies equally across timezones.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPC CHECKLIST -->
+  <div class="section">
+    <div class="s-label" style="color:#22d3ee">SPC Engagement Checklist</div>
+    <div class="s-title">Diagnosing a distributed team delivery problem — where to look first</div>
+    <div class="checklist">
+      <div class="cl-item">
+        <input type="checkbox" id="dc1">
+        <label for="dc1"><strong>Architecture audit first</strong>Map domain boundaries against hub geography. If teams own cross-hub features rather than distinct bounded contexts, most "coordination problems" are actually architecture problems. Fix the boundary before fixing the process.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc2">
+        <label for="dc2"><strong>Measure async discipline</strong>Track async decision rate, PR review latency by timezone, and handoff packet completion rate. If &lt;70% of decisions are made async, the team is running a co-located operating model on a distributed team — it will always underperform.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc3">
+        <label for="dc3"><strong>Audit the overlap window</strong>What percentage of live sync time is decisions vs. status? If status dominates, replace with async risk digest and reclaim overlap for high-value decisions only.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc4">
+        <label for="dc4"><strong>Check IDP self-service completeness</strong>Can an engineer in every hub provision, deploy, and diagnose without a timezone-gated approval or Slack message to AEST? If not, the platform is not serving the distributed model.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc5">
+        <label for="dc5"><strong>Run site-segmented SPACE</strong>Average DORA and NPS metrics mask failing hubs. Break satisfaction and throughput data by site before drawing any delivery conclusions.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc6">
+        <label for="dc6"><strong>Shadow AI audit</strong>Ask each hub what AI tools engineers are using day-to-day. The answer will differ from the approved list. Channel it with governance — don't ban it and drive it further underground.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc7">
+        <label for="dc7"><strong>Verify true cost model</strong>Is the distributed team budget including coordination overhead (15–25% of a senior TL's time per 5 offshore engineers), in-person gathering investment, and IP/security tooling? If not, the model is under-resourced for governance and will fail at scale.</label>
+      </div>
+      <div class="cl-item">
+        <input type="checkbox" id="dc8">
+        <label for="dc8"><strong>Insider test</strong>Do offshore engineers receive the same PI context, product vision, and company culture onboarding as onshore? Can they name the product OKRs for this PI? If not, they are operating as a vendor, not a team — and the delivery signal difference is measurable.</label>
+      </div>
+    </div>
+
+    <div class="callout" style="background:rgba(34,211,238,0.07);border:1px solid rgba(34,211,238,0.2);">
+      <div class="callout-header" style="color:#22d3ee">🏆 SPC Authority Point</div>
+      <p style="color:rgba(180,240,255,0.85);">The highest-value distributed team intervention is reframing the problem. Clients present "offshore team performance issues." The root cause is almost always one of three things: <strong>architecture coupling</strong> (teams can't work independently), <strong>async discipline failure</strong> (co-located habits on distributed infrastructure), or <strong>platform maturity gaps</strong> (timezone-gated approvals in an IDP that isn't truly self-service). Each has a different prescription. The SPC who can diagnose which one — using the metrics, the architecture map, and the async audit — is operating at a different level than one who recommends "better communication tools."</p>
     </div>
   </div>
 
